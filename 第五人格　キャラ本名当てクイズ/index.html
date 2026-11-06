@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第五人格 全キャラ開放タイムアタック</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <header>
+      <h1>第五人格 サバイバー本名当てクイズ</h1>
+      
+     
+<div class="header-status">
+  <p class="progress-text">開放状況: <span id="openedCount">0</span> / <span id="totalCount">0</span></p>
+  <p class="timer-text">経過時間: <span id="timeDisplay">00:00</span></p>
+  <p class="best-text">自己ベスト: <span id="bestTimeDisplay">--:--</span></p>
+</div>
+    </header>
+
+    <!-- コントロールエリア -->
+    <div class="control-panel">
+      <div class="input-area">
+        <input type="text" id="characterInput" placeholder="本名をフルネームで入力..." autocomplete="off">
+        <button id="submitBtn">判定</button>
+      </div>
+      <div class="button-group">
+        <button id="startBtn" class="btn-sub btn-start">▶️ スタート</button>
+        <button id="hintBtn" class="btn-sub">💡 ヒント</button>
+        <button id="resetBtn" class="btn-sub btn-reset">🔄 リセット</button>
+      </div>
+    </div>
+    
+    <div id="message" class="message"></div>
+
+    <!-- クリア画面 -->
+    <div id="clearScreen" class="clear-screen hidden">
+      <h2 id="clearTitle">🎉 ALL CLEAR! 🎉</h2>
+      <p id="clearText">クリアタイム: <span id="finalTime">00:00</span></p>
+      
+      <!-- X共有ボタン -->
+      <a id="shareXBtn" class="btn-share-x" href="#" target="_blank" rel="noopener noreferrer">
+        𝕏 でクリアタイムを投稿
+      </a>
+    </div>
+
+    <!-- パネル一覧エリア -->
+    <div id="characterGrid" class="grid-container">
+      <!-- JSでパネルが生成されます -->
+      
+    </div>
+     <footer>
+      <p>&copy; 2026 かまぼこ All Rights Reserved.</p>
+      <p class="disclaimer">※当サイトは非公式のファンサイトであり、NetEase, Inc.とは一切関係ありません。</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
